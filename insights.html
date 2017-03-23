@@ -1,0 +1,529 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>drie - Build, deploy and scale your apps in the cloud with AWS security best practices</title>
+        <meta name="keywords" content="drie, cloud security">
+        <meta name="description" content="Better cloud security in minutes">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+        <link rel="icon" type="image/png" href="images/favicon.ico">
+        <link rel="stylesheet" href="css/libs/bootstrap.css">
+
+        <link rel="stylesheet" href="css/libs/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/libs/fontello.css">
+        <link rel="stylesheet" href="css/libs/magnific-popup.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+         ga('create', 'UA-64852539-1', 'auto');
+         ga('send', 'pageview');
+
+        </script>
+    <noscript>Your browser does not support JavaScript!</noscript>
+    <script src="https://use.fontawesome.com/222028dcad.js"></script>
+    </head>
+
+    <body>
+<header>
+  <nav class="navbar">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="logo" href="index.html">drie<img src="images/logo.png" alt="drie.co"></a>
+    </div>
+     <div id="menu" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="our_team.html">Our Team</a></li>
+        <li><a href="contact_us.html">Contact us</a></li>
+        <li></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+</header>
+        <main class="">
+            <div class="container">
+                <div class="page-header">
+                    <h1 class="block-title block-title--not-alone">drie blog, news & events</h1>
+                    <p class="block-subtitle">Keep up-to-date with the latest and greatest in the world of drie</p>
+                </div>
+                <div class="insights">
+                    <div class="button-group filter-button-group">
+                      <button class="active" data-filter="*">All</button>
+                      <button data-filter=".blog">Blog</button>
+                      <button data-filter=".events">Events</button>
+                      <button data-filter=".news">News</button>
+                    </div>
+                    <div class="grid row">
+                     <div class="col-xs-6 col-md-4 grid-item blog">
+                            <div class="insights__content">
+                                <div class="insights__body">
+                                    <h2 class="insights__title">Ulrike Eder</h2>
+                                    <p class="insights__about">March | 2017</p>
+                                    <p class="insights__descr">My tech start-up journey</p>
+                                      <a href="https://blog.drie.co/my-tech-start-up-journey-one-year-in-b699e7806158#.jq5mhmgc7">Read blog<span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                                        <div class="col-xs-6 col-md-4 grid-item blog">
+                            <div class="insights__content">
+                                <div class="insights__body">
+                                <h2 class="insights__title">March 2017</h2>
+                                    <p class="insights__about">12 Factor App Patterns</p>
+                                      <a href="https://blog.drie.co/what-is-the-12-factor-app-pattern-5ea3f086b4c8#.bynmd1qog" class="insights__link">Read blog <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-xs-6 col-md-4 grid-item blog">
+                            <div class="insights__content">
+                                <div class="insights__body">
+                                <h2 class="insights__title">March 2017</h2>
+                                    <p class="insights__about">What is the AWS marketplace</p>
+                                      <a href="https://blog.drie.co/what-is-the-aws-marketplace-f747850f9d9e#.gn01328qt" class="insights__link">Read blog <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+ <div class="col-xs-6 col-md-4 grid-item blog">
+                            <div class="insights__content">
+                                <div class="insights__body">
+                                    <h2 class="insights__title">Ben Taylor</h2>
+                                    <p class="insights__about">February | 2017</p>
+                                    <p class="insights__descr">Why people hire DevOps</p>
+                                      <a href="https://blog.drie.co/why-people-hire-devops-75bb207eaf7d#.5csx9lmnf">Read blog<span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-xs-6 col-md-4 grid-item blog">
+                            <div class="insights__content">
+                                <div class="insights__body">
+                                <h2 class="insights__title">February 2017</h2>
+                                    <p class="insights__about">Hiring DevOps talent</p>
+                                      <a href="https://blog.drie.co/hiring-devops-talent-7c2a63fa70c3#.y2bg0s1na" class="insights__link">Read blog <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-xs-6 col-md-4 grid-item grid-item--height2 news">
+                            <div class="insights__content">
+                                <div class="insights__img" style="margin-left: 34px;"><img src="images/TechCityNews.png" alt="techcity"></div>
+                                <div class="insights__body">
+                                    <h2 class="insights__title">Tech City News features round of funding</h2>
+                                    <p class="insights__about">January | 2017</p>
+                                    <a href="http://techcitynews.com/2017/02/03/paas-firm-drie-gets-410000-in-seed-funding/">Read the release <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-xs-6 col-md-4 grid-item blog">
+                            <div class="insights__content">
+                                <div class="insights__body">
+                                <h2 class="insights__title">January 2017</h2>
+                                    <p class="insights__about">Rolling changes back</p>
+                                      <a href="https://blog.drie.co/rolling-changes-back-baf681d5c36c#.1k6q9getl" class="insights__link">Read blog <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                     <div class="col-xs-6 col-md-4 grid-item blog">
+                            <div class="insights__content">
+                                <div class="insights__body">
+                                <h2 class="insights__title">January 2017</h2>
+                                    <p class="insights__about">What are microservices</p>
+                                      <a href="https://blog.drie.co/what-are-microservices-c1b5984f1595#.8ziv8j3mt" class="insights__link">Read blog <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                     <div class="col-xs-6 col-md-4 grid-item grid-item--height2 events">
+                            <div class="insights__content">
+                                <div class="insights__body">
+                                    <h2 class="insights__title">Government & cloud security</h2>
+                                    <p class="insights__about">March | 2017</p>
+                                    <p class="insights__descr">drie hosts event on securing digital services in the public cloud</p>
+                                    <a class="btn btn-success insights__btn" href="https://www.eventbrite.com/e/securing-digital-services-on-public-cloud-tickets-31285661255?aff=drwb">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                     <div class="col-xs-6 col-md-4 grid-item blog">
+                            <div class="insights__content">
+                                <div class="insights__body">
+                                <h2 class="insights__title">January 2017</h2>
+                                    <p class="insights__about">Encryption of At-Rest-Data</p>
+                                      <a href="https://blog.drie.co/encryption-of-at-rest-data-41f5902ac8b5#.82osqjmiz" class="insights__link">Read blog <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                             <div class="col-xs-6 col-md-4 grid-item news">
+                            <div class="insights__content">
+                                <div class="insights__body">
+                                    <h2 class="insights__title">drie raises 2nd round </h2>
+                                    <p class="insights__about">January | 2017</p>
+                                      <a href="https://blog.drie.co/secure-aws-start-up-drie-closes-410-000-seed-funding-round-1177e135248e#.rmdvv4atf">Read the release <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-xs-6 col-md-4 grid-item blog">
+                            <div class="insights__content">
+                                <div class="insights__body">
+                                <h2 class="insights__title">January 2017</h2>
+                                    <p class="insights__about">Continuous Deployment & Automation</p>
+                                      <a href="https://blog.drie.co/ship-it-continuous-deployment-automation-and-how-to-avoid-stressful-downtime-97fea66520b4#.3s2cge19p" class="insights__link">Read blog <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                                        <div class="col-xs-6 col-md-4 grid-item news">
+                            <div class="insights__content">
+                                <div class="insights__body">
+                                    <h2 class="insights__title">Coverage in SC magazine UK</h2>
+                                    <p class="insights__about">January | 2017</p>
+                                      <a href="https://www.scmagazineuk.com/android-tops-2016-vulnerability-list-security-industry-says-meh/article/630059/" class="insights__link">Read the article <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-xs-6 col-md-4 grid-item blog">
+                            <div class="insights__content">
+                                <div class="insights__body">
+                                <h2 class="insights__title">January 2017</h2>
+                                    <p class="insights__about">Why wouldn't you patch?</p>
+                                      <a href="https://blog.drie.co/patching-69cf5346d636#.2q4ysf62w" class="insights__link">Read blog <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-xs-6 col-md-4 grid-item grid-item--height2 events">
+                            <div class="insights__content">
+                                <div class="insights__body">
+                                    <h2 class="insights__title">Cyber London Demo Day</h2>
+                                    <p class="insights__about">December | 2016</p>
+                                    <p class="insights__descr">drie's pitch to 150 investors & prospects</p>
+                                    <a href="https://drive.google.com/file/d/0B4CfsKhyiZJ0RUluSGJkN0dSRUk/view?usp=sharing" class="btn btn-success insights__btn">Watch the video</a>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-xs-6 col-md-4 grid-item news">
+                            <div class="insights__content">
+                                <div class="insights__body">
+                                    <h2 class="insights__title">Coverage in SC magazine UK</h2>
+                                    <p class="insights__about">December | 2016</p>
+                                      <a href="https://www.scmagazineuk.com/skype-backdoor-missed-by-microsoft-development-team/article/579696/" class="insights__link">Read the article <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-4 grid-item blog">
+                            <div class="insights__content">
+                                <div class="insights__body">
+                                <h2 class="insights__title">December 2016</h2>
+                                    <p class="insights__about">AWS & the UK government</p>
+                                      <a href="https://blog.drie.co/amazon-web-services-aws-the-uk-government-ee396f8d56f8#.8z7mny9mu" class="insights__link">Read blog <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-xs-6 col-md-4 grid-item blog">
+                            <div class="insights__content">
+                                <div class="insights__body">
+                                <h2 class="insights__title">December 2016</h2>
+                                    <p class="insights__about">There's no glory in patching</p>
+                                      <a href="https://blog.drie.co/theres-no-glory-in-patching-ce93253e9984#.2yo9loiad" class="insights__link">Read blog <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                     <div class="col-xs-6 col-md-4 grid-item blog">
+                            <div class="insights__content">
+                                <div class="insights__body">
+                                <h2 class="insights__title">December 2016</h2>
+                                    <p class="insights__about">Web apps and serverless frameworks</p>
+                                      <a href="https://blog.drie.co/web-apps-serverless-platforms-the-challenges-you-face-e9ed69274b9c#.bhxla3aaf" class="insights__link">Read blog <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-xs-6 col-md-4 grid-item events">
+                            <div class="insights__content has-link">
+                                <div class="insights__body">
+                                    <h2 class="insights__title">Talk at the Infracoders London Meetup</h2>
+                                    <p class="insights__about">November | 2016</p>
+                                    <p class="insights__descr">Ben Taylor talks about encryption with AWS Certificate Manager & CloudFormation </p>
+                                </div>
+                            </div>
+                         </div>
+                        <div class="col-xs-6 col-md-4 grid-item grid-item--height2 events">
+                            <div class="insights__content">
+                                <div class="insights__img"><img src="images/insights_layers.jpg" alt="drie.co"></div>
+                                <div class="insights__body">
+                                    <h2 class="insights__title">drie at BAE's conference</h2>
+                                    <p class="insights__about">November | 2016</p>
+                                    <p class="insights__descr">Kalbir Sohi introduces drie at BAE's internal sales conference</p>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-xs-6 col-md-4 grid-item news">
+                            <div class="insights__content">
+                                <div class="insights__body">
+                                    <h2 class="insights__title">drie appears in Wired magazine</h2>
+                                    <p class="insights__about">November | 2016</p>
+                                      <a href="http://www.wired.co.uk/article/how-to-fix-the-uk-security-scene" class="insights__link">Read the article <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-xs-6 col-md-4 grid-item grid-item--height2 events">
+                            <div class="insights__content">
+                                <div class="insights__img"><img src="images/insights_layers.jpg" alt="drie.co"></div>
+                                <div class="insights__body">
+                                    <h2 class="insights__title">drie presents at MarTech Europe </h2>
+                                    <p class="insights__about">November | 2016</p>
+                                    <p class="insights__descr">Ulrike Eder gives a keynote talk on Agile Marketing</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-4 grid-item blog">
+                            <div class="insights__content">
+                                <div class="insights__body">
+                                    <h2 class="insights__title">Ben Taylor</h2>
+                                    <p class="insights__about">November | 2016</p>
+                                    <p class="insights__descr">PaaS (false) economics</p>
+                                      <a href="https://blog.drie.co/paas-false-economics-13f72d87b485#.p3p9pe40z" class="insights__link">Read post <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-4 grid-item grid-item--height2 blog">
+                            <div class="insights__content blog--main">
+                                <div class="insights__body">
+                                    <h2 class="insights__title">Ben Taylor</h2>
+                                    <p class="insights__about">November | 2016</p>
+                                    <p class="insights__descr">3 examples why cyber security isn't a cost centre</p>
+                                    <a href="https://blog.drie.co/3-examples-why-cyber-security-isnt-a-cost-centre-c63ad4be4063#.7hkgtkcjq" class="insights__link">Read post <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-4 grid-item grid-item--height2 blog">
+                            <div class="insights__content blog--main">
+                                <div class="insights__body">
+                                    <h2 class="insights__title">Ben Taylor</h2>
+                                    <p class="insights__about">November | 2016</p>
+                                    <p class="insights__descr">Why use drie when I could use product X</p>
+                                    <a href="https://blog.drie.co/why-use-drie-when-i-could-use-x-c2b5c3d0cdb0#.45287jm8b" class="insights__link">Read post <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-4 grid-item blog">
+                            <div class="insights__content">
+                                <div class="insights__body">
+                                    <h2 class="insights__title">Ben Taylor</h2>
+                                    <p class="insights__about">November | 2016</p>
+                                    <p class="insights__descr">Why use a hosted platform</p>
+                                      <a href="https://blog.drie.co/why-use-a-hosted-platform-dbc9072c176b#.bczp5bzah" class="insights__link">Read post <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-4 grid-item grid-item--height2 blog">
+                            <div class="insights__content blog--main">
+                                <div class="insights__body">
+                                    <h2 class="insights__title">Ben Taylor</h2>
+                                    <p class="insights__about">November | 2016</p>
+                                    <p class="insights__descr">Simple rules of thumb for 12 Factor Apps</p>
+                                    <a href="https://blog.drie.co/simple-rules-of-thumb-for-12-factor-apps-3eaa53af9c42#.slx3luw67" class="insights__link">Read post <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-4 grid-item events">
+                            <div class="insights__content has-link">
+                                <div class="insights__body">
+                                    <h2 class="insights__title">Talk at the London Cyber Security Meetup</h2>
+                                    <p class="insights__about">November | 2016</p>
+                                    <p class="insights__descr">Kalbir Sohi talks about gluing rather than building in the cloud</p>
+                                </div>
+                            </div>
+                         </div>
+                        <div class="col-xs-6 col-md-4 grid-item grid-item--height2 news">
+                            <div class="insights__content">
+                                <div class="insights__img"><img src="images/insights_layers.jpg" alt="drie.co"></div>
+                                <div class="insights__body">
+                                    <h2 class="insights__title">Computing Security Excellence Awards</h2>
+                                    <p class="insights__about">October | 2016</p>
+                                    <p class="insights__descr">Nominated for the cloud security & security woman of the year award</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-4 grid-item grid-item--height2 events">
+                            <div class="insights__content">
+                                <div class="insights__img"><img src="images/insights_layers.jpg" alt="drie.co"></div>
+                                <div class="insights__body">
+                                    <h2 class="insights__title">Wired Security</h2>
+                                    <p class="insights__about">October | 2016</p>
+                                    <p class="insights__descr">Tom van Neerijnen sits on a panel on "Growth of the UK's cyber security scene"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-4 grid-item blog">
+                            <div class="insights__content">
+                                <div class="insights__body">
+                                    <h2 class="insights__title">Tom van Neerijnen</h2>
+                                    <p class="insights__about">October | 2016</p>
+                                    <p class="insights__descr">Introducing drie push</p>
+                                      <a href="https://blog.drie.co/introducing-drie-push-8fa9f5a5aa8b#.u0w6aaayp" class="insights__link">Read post <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-4 grid-item grid-item--height2 blog">
+                            <div class="insights__content blog--main">
+                                <div class="insights__body">
+                                    <h2 class="insights__title">Ulrike Eder</h2>
+                                    <p class="insights__about">September | 2016</p>
+                                    <p class="insights__descr">10 things we've learned after our first round of funding (nine months later).</p>
+                                    <a href="10_things_we_have_learned_after_our_first_round_of_funding.html" class="insights__link">Read post <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-4 grid-item news">
+                            <div class="insights__content">
+                                <div class="insights__body">
+                                    <h2 class="insights__title">drie joins CyLon accelerator</h2>
+                                    <p class="insights__about">September | 2016</p>
+                                      <a href="drie_joins_cylon_accelerator.html" class="insights__link">Read the press release <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-4 grid-item blog">
+                            <div class="insights__content">
+                                <div class="insights__body">
+                                    <h2 class="insights__title">Kalbir Sohi</h2>
+                                    <p class="insights__about">September | 2016</p>
+                                    <p class="insights__descr">Shortcuts and deadlines</p>
+                                      <a href="https://blog.drie.co/shortcuts-and-deadlines-19d9cc27ad38#.c5kl6ox4r" class="insights__link">Read post <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-4 grid-item grid-item--height2 events">
+                            <div class="insights__content">
+                                <div class="insights__body">
+                                    <h2 class="insights__title">Lambda & CloudFormation</h2>
+                                    <p class="insights__about">August | 2016</p>
+                                    <p class="insights__descr">Ben Taylor presents at the AWS user group meeting</p>
+                                    <a href="https://github.com/bewt85/CfTemplateLambdaDemo" class="btn btn-success insights__btn">Watch the video</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-4 grid-item grid-item--height2 blog">
+                            <div class="insights__content blog--main">
+                                <div class="insights__body">
+                                    <h2 class="insights__title">Kalbir Sohi</h2>
+                                    <p class="insights__about">March | 2016</p>
+                                    <p class="insights__descr">5 articles that shaped my thinking about platform as a service</p>
+                                    <a href="https://blog.drie.co/5-articles-that-shaped-my-thinking-about-platform-as-a-service-88480dab4ed5#.h34jb6dwb" class="insights__link">Read post <span class="icon-right-open-big"></span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="load-more">Load more <span class="icon-right-open-big"></span></button>
+                </div>
+            </div>
+    		<div class="page-devider page-devider--violet">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-2 col-sm-7 col-sm-offset-1">
+                            <h4 class="white">Get in touch with drie for your cloud security and start deploying plans</h4>
+                        </div>
+                        <div class="col-sm-4 col-md-offset-1">
+                            <a href="contact_us.html" class="btn btn-primary">Contact Drie</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+                  <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="logo-wrap">
+                            <a class="logo" href="index.html">drie<img src="images/footer_logo.png" alt="drie.co"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="columns">
+                            <div class="column">
+                                <h4 class="column__title"></h4>
+                                <ul class="column__list">
+
+
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <h4 class="column__title">Apps</h4>
+                                <ul class="column__list">
+                                    <li><a href="http://docs.drie.co/">Get Started</a></li>
+                                    <li><a href="http://docs.drie.co/docs/deploy-a-ruby-app-on-drie-1">Deploy Rails app</a></li>
+                                    <li><a href="http://docs.drie.co/docs/deploy-a-nodejs-express-4-app-on-drie?__hstc=181257784.4f0a61aeb76f8166d2a54d950d2dabfe.1474639450140.1474648819675.1474651886335.4&__hssc=181257784.20.1474651886335&__hsfp=836449569">Deploy Node app</a></li>
+                                    <li><a href="http://docs.drie.co/docs/deploy-a-php-app-on-drie">Deploy PHP app</a></li>
+                                    <li><a href="http://docs.drie.co/docs/deploy-a-java-spark-microframework-app-on-drie?__hstc=181257784.4f0a61aeb76f8166d2a54d950d2dabfe.1474639450140.1474648819675.1474651886335.4&__hssc=181257784.22.1474651886335&__hsfp=836449569">Deploy Java app</a></li>
+                                    <li><a href="http://docs.drie.co/docs/deploy-a-google-go-golang-rest-api-server-on-drie?__hstc=181257784.4f0a61aeb76f8166d2a54d950d2dabfe.1474639450140.1474648819675.1474651886335.4&__hssc=181257784.22.1474651886335&__hsfp=836449569">Deploy Go app</a></li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <h4 class="column__title">About Us</h4>
+                                <ul class="column__list">
+                                    <li> <a href="https://blog.drie.co/"> Blog </a> </li>
+                                    <li> <a href="http://docs.drie.co/docs/drie-platform-overview"> What is drie </a> </li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <h4 class="column__title">Support</h4>
+                                <ul class="column__list">
+                                    <li><a href="contact_us.html">Contact us</a></li>
+        <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                    <!-- Begin MailChimp Signup Form -->
+<div class="newletter">
+<form action="//drie.us14.list-manage.com/subscribe/post?u=7a6bca72f7576aef538d2b3e9&amp;id=9b46c49f1f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	<h4 class="newletter__title">Sign up for our Newsletter</h4>
+	<div class="newletter__form">
+	<input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="hello@drie.co" required><button type="submit" class="btn btn-primary">
+      <i class="fa fa-angle-right" aria-hidden="true"></i>
+    </button>
+    </div>
+</form>
+                    </div>
+<!--End mc_embed_signup-->
+                       <div class="follow-us">
+                           <h4 class="follow-us__title">Follow Us</h4>
+                           <ul class="social">
+                             <li><a class="facebook" href="https://www.facebook.com/profile.php?id=620050311466158&fref=ts"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                             <li><a class="twitter" href="https://twitter.com/drie_co"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                             <li><a class="linkedin" href="https://www.linkedin.com/company-beta/10238333/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                           </ul>
+                       </div>
+
+                </div>
+                </div>
+            </div>
+
+        </footer>
+        <script src="js/libs/owl.carousel.min.js"></script>
+        <script src="js/libs/bootstrap.min.js"></script>
+        <script src="js/libs/isotope.js"></script>
+        <script src="js/main.min.js"></script>
+        <!-- <script>$('#video').click(function(){this.paused?this.play():this.pause();});</script> -->
+
+
+        <script>
+
+        </script>
+        <script>
+
+        </script>
+    </body>
+</html>

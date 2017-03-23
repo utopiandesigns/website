@@ -1,0 +1,367 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>drie - Build, deploy and scale your apps in the cloud with AWS security best practices</title>
+        <meta name="keywords" content="drie, cloud security">
+        <meta name="description" content="Better cloud security in minutes">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+        <link rel="icon" type="image/png" href="images/favicon.ico">
+        <link rel="stylesheet" href="css/libs/bootstrap.css">
+
+        <link rel="stylesheet" href="css/libs/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/libs/fontello.css">
+        <link rel="stylesheet" href="css/libs/magnific-popup.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+         ga('create', 'UA-64852539-1', 'auto');
+         ga('send', 'pageview');
+
+        </script>
+    <noscript>Your browser does not support JavaScript!</noscript>
+    <script src="https://use.fontawesome.com/222028dcad.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body>
+<header>
+  <nav class="navbar">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="logo" href="index.html">drie<img src="images/logo.png" alt="drie.co"></a>
+    </div>
+     <div id="menu" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="our_team.html">Our Team</a></li>
+        <li><a href="contact_us.html">Contact us</a></li>
+        <li></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+</header>
+        <main class="contact-page">
+          <div class="container">
+        	<div class="page-header">
+	        	<h1 class="block-title block-title--not-alone">Pricing Without Surprises</h1>
+	    		<p class="block-subtitle">Give it a try for free for 30 days</p>
+          <p class="lineHeight">Our standard fixed pricing model gives you full visibility on how much you will spend monthly on drie. We don’t like hidden surprises so you won’t have any with our product. We believe that <span class="underline-dashed">you won’t need any DevOps help</span> once you use drie and in case you doyou can make use of our DevOps consulting days* that are included in every package.</p>
+    		</div>
+    		<div class="row">
+    			<div class="col-xs-12 col-sm-12">
+            <div class="box">
+              <h2 class="block-title noTop block-title--not-alone">How to Calculate Your Final Pricing?</h2>
+              <h3 class="pricingTitle"><a href="#aws-cost"><span class="underline-dashed">Your own AWS cost</span></a> + <span class="underline">drie cost</span></h3>
+            </div>
+    			</div>
+        </div>
+        <div class="row bottomMargin">
+    			<div class="col-xs-12 col-sm-offset-1 col-sm-10">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <div class="pricingBlock">
+                  <div class="blockTitle">
+                    <h4>STANDARD</h4><span>flat rate</span>
+                  </div>
+                  <div class="blockContent">
+                    <div class="blockPrice">
+                      <div>
+                      <span>$1,165</span>/mo
+                    </div>
+                      <a href="contact_us.html">Try It</a>
+                    </div>
+                    <ul class="blockUl">
+                      <li class="innerButton">
+                        <button class="bar" data-toggle="collapse" data-target="#core-features">Core platform features <i class="material-icons">keyboard_arrow_down</i></button>
+                        <div class="collapse in" id="core-features">
+                          <div class="well">
+                            <ul class="innerBlockUl">
+                              <li>• Platform as a service</li>
+                              <li>• Running in your own AWS account</li>
+                              <li>• Deploy directly from github</li>
+                              <li>• Horizontal scaling</li>
+                              <li>• Run production apps on dedicatedinstances</li>
+                              <li>• Fast and cheap developmentenvironments</li>
+                              <li>• Security focused architecture</li>
+                              <li>• SSL provisioned automatically</li>
+                              <li>• [Custom domain names]</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li>Documentation <i class="material-icons">done</i></li>
+                      <li>24hr response time <i class="material-icons">done</i></li>
+                      <li class="innerButton">
+                        <button class="bar" data-toggle="collapse" data-target="#devops-days">5 dedicated DevOps days <i class="material-icons">keyboard_arrow_down</i></button>
+                        <div class="collapse" id="devops-days">
+                          <div class="well">
+                            <ul class="innerBlockUl">
+                              <li>• Help moving existing applications to drie</li>
+                              <li>• Set up and connect databases to your environments</li>
+                              <li>• Set up and connect other AWS services to your applications</li>
+                              <li>• Getting you started building cloud native applications</li>
+                              <li>• Setting up pipelines using 3rd party tools like TravisCI, CircleCI and Codeship</li>
+                              <li>• Setting up VPNs from your drie AWS infrastructure to other locations</li>
+                              <li>• Setting up approvals workflows on github repos</li>
+                              <li>• Integrate monitoring tools or services like New Relic or Pingdom</li>
+                              <li>• Other infrastructure, automation or design tasks on AWS</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li>Free for 30 Days <i class="material-icons">done</i></li>
+                    </ul>
+                  </div>
+                  <div class="blockFooter">
+                    <a href="contact_us.html">Contact Us</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <div class="pricingBlock premium">
+                  <div class="blockTitle">
+                    <h4>PREMIUM</h4>
+                  </div>
+                  <div class="blockContent">
+                    <div class="blockPrice">
+                      <img src="images/flag.png">
+                    <a href="contact_us.html">Let’s Talk</a>
+                  </div>
+                    <ul class="blockUl">
+                      <li class="innerButton">
+                        <button class="bar" data-toggle="collapse" data-target="#core-features-premium">Core platform features <i class="material-icons">keyboard_arrow_down</i></button>
+                        <div class="collapse in" id="core-features-premium">
+                          <div class="well">
+                            <ul class="innerBlockUl">
+                              <li>• Platform as a service</li>
+                              <li>• Running in your own AWS account</li>
+                              <li>• Deploy directly from github</li>
+                              <li>• Horizontal scaling</li>
+                              <li>• Run production apps on dedicatedinstances</li>
+                              <li>• Fast and cheap developmentenvironments</li>
+                              <li>• Security focused architecture</li>
+                              <li>• SSL provisioned automatically</li>
+                              <li>• [Custom domain names]</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li>Documentation <i class="material-icons">done</i></li>
+                      <li>24hr response time <i class="material-icons">done</i></li>
+                      <li>24/7 helpline <i class="material-icons">done</i></li>
+                      <li>Dedicated Technical Lead <i class="material-icons">done</i></li>
+                      <li class="innerButton">
+                        <button class="bar" data-toggle="collapse" data-target="#devops-days-premium">10 dedicated DevOps days <i class="material-icons">keyboard_arrow_down</i></button>
+                        <div class="collapse" id="devops-days-premium">
+                          <div class="well">
+                            <ul class="innerBlockUl">
+                              <li>• Help moving existing applications to drie</li>
+                              <li>• Set up and connect databases to your environments</li>
+                              <li>• Set up and connect other AWS services to your applications</li>
+                              <li>• Getting you started building cloud native applications</li>
+                              <li>• Setting up pipelines using 3rd party tools like TravisCI, CircleCI and Codeship</li>
+                              <li>• Setting up VPNs from your drie AWS infrastructure to other locations</li>
+                              <li>• Setting up approvals workflows on github repos</li>
+                              <li>• Integrate monitoring tools or services like New Relic or Pingdom</li>
+                              <li>• Other infrastructure, automation or design tasks on AWS</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li>Free for 30 Days <i class="material-icons">done</i></li>
+                    </ul>
+                  </div>
+                  <div class="blockFooter">
+                    <a href="contact_us.html">Contact Us</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+    			</div>
+    		</div>
+        <div class="row" id="aws-cost">
+          <h2 class="block-title noTop moreBottom block-title--not-alone">Your estimated AWS infrastructure cost</h2>
+          <div class="col-xs-12 col-sm-4 awsPrice">
+            <div class="topBox first">
+              <h3>Small</h3>
+              <p>Running 1 application, 2 production nodes, 20 test branches</p>
+            </div>
+            <div class="bottomBox first">
+              <span>$150 - $175/month*</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 awsPrice">
+            <div class="topBox">
+              <h3>Medium</h3>
+              <p>Running 25 applications, 100 production nodes, 50 test branches</p>
+            </div>
+            <div class="bottomBox">
+              <span>$1,500 - $1,800/month*</span>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 awsPrice">
+            <div class="topBox last">
+              <h3>Large</h3>
+              <p>Running 100 application, 400 production nodes, 250 test branches</p>
+            </div>
+            <div class="bottomBox last">
+              <span>$6,500 - $7,000/month*</span>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="disclaimer">* These figures are estimates</div>
+        </div>
+      </div>
+      <div class="cta">
+        <div class="container">
+          <div class="col-xs-12 col-sm-8 pull-right">
+            <p>We're keen to give back to the community - if you're a start-up <span>Get in Touch</span> and we'll tell you more about our special pricing for you!</p>
+          </div>
+          <div class="col-xs-12 col-sm-4 pull-left">
+            <a href="contact_us.html" class="btn btn-primary">START-UPS!</a>
+          </div>
+        </div>
+      </div>
+      <div class="cta-2">
+      <div class="container">
+        <div class="col-xs-12 col-sm-8">
+          <p>We have helped many clients with consulting around DevOps and Cloud Security</p>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <a href="contact_us.html" class="btn btn-primary">FIND OUT MORE</a>
+        </div>
+      </div>
+    </div>
+        </main>
+                 <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="logo-wrap">
+                            <a class="logo" href="index.html">drie<img src="images/footer_logo.png" alt="drie.co"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="columns">
+                            <div class="column">
+                                <h4 class="column__title"></h4>
+                                <ul class="column__list">
+
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <h4 class="column__title">Apps</h4>
+                                <ul class="column__list">
+                                    <li><a href="http://docs.drie.co/">Get Started</a></li>
+                                    <li><a href="http://docs.drie.co/docs/deploy-a-ruby-app-on-drie-1">Deploy Rails app</a></li>
+                                    <li><a href="http://docs.drie.co/docs/deploy-a-nodejs-express-4-app-on-drie?__hstc=181257784.4f0a61aeb76f8166d2a54d950d2dabfe.1474639450140.1474648819675.1474651886335.4&__hssc=181257784.20.1474651886335&__hsfp=836449569">Deploy Node app</a></li>
+                                    <li><a href="http://docs.drie.co/docs/deploy-a-php-app-on-drie">Deploy PHP app</a></li>
+                                    <li><a href="http://docs.drie.co/docs/deploy-a-java-spark-microframework-app-on-drie?__hstc=181257784.4f0a61aeb76f8166d2a54d950d2dabfe.1474639450140.1474648819675.1474651886335.4&__hssc=181257784.22.1474651886335&__hsfp=836449569">Deploy Java app</a></li>
+                                    <li><a href="http://docs.drie.co/docs/deploy-a-google-go-golang-rest-api-server-on-drie?__hstc=181257784.4f0a61aeb76f8166d2a54d950d2dabfe.1474639450140.1474648819675.1474651886335.4&__hssc=181257784.22.1474651886335&__hsfp=836449569">Deploy Go app</a></li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <h4 class="column__title">About Us</h4>
+                                <ul class="column__list">
+                                    <li> <a href="https://blog.drie.co/"> Blog </a> </li>
+                                    <li> <a href="http://docs.drie.co/docs/drie-platform-overview"> What is drie </a> </li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <h4 class="column__title">Support</h4>
+                                <ul class="column__list">
+                                    <li><a href="contact_us.html">Contact us</a></li>
+        <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                    <!-- Begin MailChimp Signup Form -->
+<div class="newletter">
+<form action="//drie.us14.list-manage.com/subscribe/post?u=7a6bca72f7576aef538d2b3e9&amp;id=9b46c49f1f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	<h4 class="newletter__title">Sign up for our Newsletter</h4>
+	<div class="newletter__form">
+	<input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="hello@drie.co" required><button type="submit" class="btn btn-primary">
+      <i class="fa fa-angle-right" aria-hidden="true"></i>
+    </button>
+    </div>
+</form>
+                    </div>
+<!--End mc_embed_signup-->
+                       <div class="follow-us">
+                           <h4 class="follow-us__title">Follow Us</h4>
+                           <ul class="social">
+                             <li><a class="facebook" href="https://www.facebook.com/profile.php?id=620050311466158&fref=ts"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                             <li><a class="twitter" href="https://twitter.com/drie_co"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                             <li><a class="linkedin" href="https://www.linkedin.com/company-beta/10238333/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                           </ul>
+                       </div>
+
+                </div>
+                </div>
+            </div>
+
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+         ga('create', 'UA-64852539-1', 'auto');
+         ga('send', 'pageview');
+
+        </script>
+        <script src="js/libs/owl.carousel.min.js"></script>
+        <script src="js/libs/bootstrap.min.js"></script>
+        <script src="js/libs/isotope.js"></script>
+        <script src="js/main.min.js"></script>
+        <!-- <script>$('#video').click(function(){this.paused?this.play():this.pause();});</script> -->
+
+
+        <script>
+
+        </script>
+        <script>
+
+        </script>
+    <!--]-->
+<script>
+$(function() {
+  $('a[href*="#aws-cost"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+</body>
+</html>
+<!-- zzz </body><!-->
