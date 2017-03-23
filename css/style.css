@@ -893,26 +893,24 @@ footer {
 
 .about {
   padding-bottom: 80px;
-  background: url("../images/diagram.png") no-repeat 50% 0;
+  background: url("../images/architecture.png") no-repeat 50% 0;
 }
 
 .main-title {
   text-align: center;
-  font-size: 32px;
+  font-size: 26px;
   line-height: 36px;
-  max-width: 570px;
-margin: 0 auto;
 }
 
 .main-title span {
-  font-weight: 700;
+  font-size: 32px;
+  font-weight: 600;
   color: #00b599;
 }
 
 .sub-title {
   margin-bottom: 40px;
-  font-size: 24px;
-  color: #53af98;
+  font-size: 22px;
 }
 
 @media (max-width: 767px) {
